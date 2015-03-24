@@ -362,9 +362,7 @@ These are the colors for the default theme of the app. For better consistency, c
 	
 1. Danger
 
-	![](https://www.evernote.com/shard/s38/sh/93d39c7c-1a3f-4d02-a387-0b29ae9a9c81/bc804f8fa918010b0d69f4e0f116e1a8/deep/0/alert-feedback-danger.png
-
-	)
+	![](https://www.evernote.com/shard/s38/sh/93d39c7c-1a3f-4d02-a387-0b29ae9a9c81/bc804f8fa918010b0d69f4e0f116e1a8/deep/0/alert-feedback-danger.png)
 
 ##Dialogs<a name="#dialogs"></a>
 1. Big modal
