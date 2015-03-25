@@ -217,7 +217,6 @@ form .input-group .input-addon {
 }
 
 /* Dropdown */
-
 select {
 	-webkit-appearance: button;
 	background-image: url('img/icon-arrow-down.png'), linear-gradient(-180deg, #FFFFFF 0%, #F8F8F8 100%);
@@ -236,4 +235,74 @@ select {
 }
 select:hover {
 	cursor: pointer;
+}
+
+/* Buttons */
+.btn-regular {
+	padding: 8px 14px;
+	margin: 5px;
+	border-radius: 3px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.btn-small {
+	padding: 4px 8px;
+	margin: 3px;
+	border-radius: 2px;
+	font-size: 12px;
+	cursor: pointer;
+}
+/* Normal */
+.btn-normal {
+	background-image: linear-gradient(-180deg, #FFFFFF 0%, #F8F8F8 100%);
+	border: 1px solid #DADADA;
+	color: #999999;
+}
+.btn-normal:hover {
+	background-image: linear-gradient(0deg, #FAFAFA 0%, #F0F0F0 100%);
+}
+/* Disabled */
+.btn-regular:disabled, .btn-small:disabled {
+	background: #EEEEEE;
+	color: #999999;
+	cursor: default !important;
+}
+/* Primary */
+.btn-primary {
+	background-image: linear-gradient(-180deg, #3F93F2 0%, #1574E1 100%);
+	border: 1px solid #0E63C4;
+	color: #FFFFFF;
+}
+.btn-primary:hover {
+	background-image: linear-gradient(0deg, #2484F3 0%, #1780D5 100%);
+}
+/* Danger */
+.btn-danger {
+	background-image: linear-gradient(-180deg, #EB2A2A 0%, #CE2929 100%);
+	border: 1px solid #C70D24;
+	color: #FFFFFF;
+}
+.btn-danger:hover {
+	background-image: linear-gradient(0deg, #D91D1D 0%, #CE2824 100%);
+}
+/* Button Group */
+.btn-group {
+	display: inline-block;
+}
+.btn-group button {
+	float: left;
+  margin: 0;
+  margin-left: -3px;
+}
+.btn-group button:first-child {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.btn-group button:last-child {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.btn-group button:not(:first-child):not(:last-child) {
+	-webkit-border-radius: 0;
+	        border-radius: 0;
 }

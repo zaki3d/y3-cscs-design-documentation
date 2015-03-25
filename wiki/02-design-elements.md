@@ -419,31 +419,181 @@ These are the colors for the default theme of the app. For better consistency, c
 
 ##Buttons and Switches<a name="#buttons-switches"></a>
 ####Regular buttons
+
+This is the base code for all regular buttons. To use it, pair it with one styling class like `.btn-primary`.
+
+HTML:
+
+```html
+<button type="button" class="btn-regular btn-primary"></button>
+```
+
+CSS:
+
+```css
+.btn-regular {
+	padding: 8px 14px;
+	margin: 5px;
+	border-radius: 3px;
+	font-size: 14px;
+	cursor: pointer;
+}
+```
+
 1. Regular primary button
 
 	![](https://www.evernote.com/shard/s38/sh/edad2bae-7724-4bb8-805d-eab7b4536b49/438ebc2234d57cf3b45d61983a6e3088/deep/0/btn-regular-primary.png)
+
+	HTML:
+
+	```html
+	<button type="button" class="btn-regular btn-primary"></button>
+	```
+
+	CSS:
+
+	```css
+	.btn-primary {
+		background-image: linear-gradient(-180deg, #3F93F2 0%, #1574E1 100%);
+		border: 1px solid #0E63C4;
+		color: #FFFFFF;
+	}
+	.btn-primary:hover {
+		background-image: linear-gradient(0deg, #2484F3 0%, #1780D5 100%);
+	}
+	```
 
 1. Regular danger button
 
 	![](https://www.evernote.com/shard/s38/sh/8a330ef5-89d4-4ab2-a4e5-67e0d36013e4/46b695c95e4401a5d443ad2b08212698/deep/0/btn-regular-danger.png)
 
-1. Regular default button
+	HTML:
+
+	```html
+	<button type="button" class="btn-regular btn-danger"></button>
+	```
+
+	CSS:
+
+	```css
+	.btn-danger {
+		background-image: linear-gradient(-180deg, #EB2A2A 0%, #CE2929 100%);
+		border: 1px solid #C70D24;
+		color: #FFFFFF;
+	}
+	.btn-danger:hover {
+		background-image: linear-gradient(0deg, #D91D1D 0%, #CE2824 100%);
+	}
+	```
+
+1. Regular normal button
 
 	![](https://www.evernote.com/shard/s38/sh/e3b19b7f-08a5-40fb-bfa5-e82e5673b34a/331fbdc48c66233cd3a755f916168261/deep/0/btn-regular-default.png)
 
-1. Regular default button with options
+	HTML:
 
-	![](https://www.evernote.com/shard/s38/sh/4306c166-e644-4fd3-b873-cbe6e2ea2c08/293828b6efb3c6ffca801e9a99baaa2b/deep/0/btn-regular-default-options.png)
+	```html
+	<button type="button" class="btn-regular btn-normal"></button>
+	```
+
+	CSS:
+
+	```css
+	.btn-normal {
+		background-image: linear-gradient(-180deg, #FFFFFF 0%, #F8F8F8 100%);
+		border: 1px solid #DADADA;
+		color: #999999;
+	}
+	.btn-normal:hover {
+		background-image: linear-gradient(0deg, #FAFAFA 0%, #F0F0F0 100%);
+	}
+	```
+
+<!--1. Regular default button with options
+
+	![](https://www.evernote.com/shard/s38/sh/4306c166-e644-4fd3-b873-cbe6e2ea2c08/293828b6efb3c6ffca801e9a99baaa2b/deep/0/btn-regular-default-options.png)-->
 
 1. Regular disabled button
 
 	![](https://www.evernote.com/shard/s38/sh/1b8f2480-7e35-40ef-b881-b2503a6af4c1/5b694d058e12f7778f0e924fa3ed448a/deep/0/btn-regular-disabled.png)
 
+	HTML:
+
+	```html
+	<button type="button" class="btn-regular" disabled></button>
+	```
+
+	CSS:
+
+	```css
+	.btn-regular:disabled, .btn-small:disabled {
+		background: #EEEEEE;
+		color: #999999;
+		cursor: default !important;
+	}
+	```
+
 1. Regular button group
 
 	![](https://www.evernote.com/shard/s38/sh/84e0d356-3c63-44cd-94ab-bb0860efa239/914934d74f0312644b0a7c6484cbc766/deep/0/btn-regular-group.png)
 
+	HTML:
+
+	```html
+	<div class="btn-group">
+		<button type="button" class="btn-regular btn-normal"></button>
+		<button type="button" class="btn-regular btn-normal"></button>
+		<button type="button" class="btn-regular btn-normal"></button>
+	</div>
+	```
+
+	CSS:
+
+	```css
+	.btn-group {
+		display: inline-block;
+	}
+	.btn-group button {
+		float: left;
+	  margin: 0;
+	  margin-left: -3px;
+	}
+	.btn-group button:first-child {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	.btn-group button:last-child {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+	.btn-group button:not(:first-child):not(:last-child) {
+		-webkit-border-radius: 0;
+		        border-radius: 0;
+	}
+	```
+
 ####Small buttons
+
+Small buttons use the same styling classes as the regular buttons. The only difference is the use of the preceding class `.btn-small` instead of `.btn-regular`.
+
+HTML:
+
+```html
+<button type="button" class="btn-small btn-primary"></button>
+```
+
+CSS: 
+
+```css
+.btn-small {
+	padding: 4px 8px;
+	margin: 3px;
+	border-radius: 2px;
+	font-size: 12px;
+	cursor: pointer;
+}
+```
+
 1. Small primary button
 
 	![](https://www.evernote.com/shard/s38/sh/0b19c9ff-a95e-487b-9941-b19d54c3edf8/158da3b62730f1996adad00aa8eab445/deep/0/btn-small-action.png)
