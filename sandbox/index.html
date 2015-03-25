@@ -6,20 +6,59 @@
 
 	<!-- Test your code in the body section -->
 	<body>
-		<div class="nav-main">
-	    <ul>
-	        <li><a href="#">Link Item</a></li>
-	        <li><a href="#">Link Item</a></li>
-	        <li><a href="#">Link Item</a></li>
-	    </ul>
-		</div>
+		<div class="container">
+			<!-- Navigation -->
+			<h1>Navigation Elements</h1>
 
-		<div class="nav-local">
-			<ul>
-	        <li><a href="#">Link Item</a></li>
-	        <li><a href="#">Link Item</a></li>
-	        <li><a href="#">Link Item</a></li>
-	    </ul>
+			<h2>Main Navigation</h2>
+			<div class="nav-main">
+		    <ul>
+		        <li><a href="#">Link Item</a></li>
+		        <li><a href="#">Link Item</a></li>
+		        <li><a href="#">Link Item</a></li>
+		    </ul>
+			</div>
+
+			<h2>Local Navigation</h2>
+			<div class="nav-local">
+				<ul>
+		        <li><a href="#" class="active">Link Item</a></li>
+		        <li><a href="#">Link Item</a></li>
+		        <li><a href="#">Link Item</a></li>
+		    </ul>
+			</div>
+
+			<h2>Tabs</h2>
+			<div class="tabs">
+				<ul>
+					<a href="#"><li class="active">Tab 1</li></a>
+					<a href="#"><li>Tab 2</li></a>
+					<a href="#"><li>Tab 3</li></a>
+				</ul>
+			</div>
+			
+			<hr>
+			<!-- Form  -->
+			<h1>Form Elements</h1>
+			<h2>Input Elements</h2>
+			<form action="">
+				<label for="input">Input (normal)</label>
+				<input type="text" placeholder="Normal input with label">
+				<input type="text" placeholder="Disabled input" disabled>
+				<input type="text" placeholder="Focused input" class="focus">
+				<input type="text" placeholder="Invalid input" class="invalid">
+				<!-- <div class="input-group">
+					<input type="text" placeholder="Input with add-on" aria-describedby="input-addon">
+					<span class="input-addon" id="input-addon">Add-on Label</span>
+				</div> -->
+				<h2>Dropdown</h2>
+				<select name="Dropdown">
+					<option value="option1">Option 1</option>
+					<option value="option2">Option 2</option>
+					<option value="option3">Option 3</option>
+				</select>
+			</form>
+			
 		</div>
 	</body>
 </html>

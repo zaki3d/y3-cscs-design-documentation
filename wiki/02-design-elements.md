@@ -111,6 +111,7 @@ These are the colors for the default theme of the app. For better consistency, c
 	.nav-local {
 		padding: 14px;
 		border-bottom: 1px solid #DADADA;
+		color: #000000;
 	}
 	.nav-local ul {
 		padding: 0;
@@ -127,7 +128,6 @@ These are the colors for the default theme of the app. For better consistency, c
 	.nav-local ul li a {
 		padding: 4px 8px;
 		background: #FFFFFF;
-		border-radius: 2px;
 		color: #000000;
 		text-decoration: none;
 	}
@@ -136,10 +136,14 @@ These are the colors for the default theme of the app. For better consistency, c
 		background: #EEEEEE;
 		border-radius: 2px;
 	}
-	.nav-local ul li a:active {
+	.nav-local ul li a.active {
 		padding: 4px 8px;
 		background: #ECF8FE;
 		border-radius: 2px;
+		color: #4A90E2;
+	}
+	.nav-local ul li a.active:hover {
+		background: #ECF8FE;
 		color: #4A90E2;
 	}
 	```
@@ -148,7 +152,44 @@ These are the colors for the default theme of the app. For better consistency, c
 
 	![](https://www.evernote.com/shard/s38/sh/55663fb0-8b9b-42f3-918a-bd62ff92a4c1/4ae23571f30d64029d85f8dadf1e45fd/deep/0/nav-tabs.png)
 
-	Please refer to [Bootstrap Tabs](http://getbootstrap.com/javascript/#tabs) for implementation guide.
+	CSS:
+
+	```css
+	.tabs	{
+		padding: 8px 0;
+		margin-top: 20px;
+		border-bottom: 1px solid #DADADA;
+	}
+	.tabs ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+	}
+	.tabs ul a {
+		text-decoration: none;
+	}
+	.tabs ul li {
+		padding: 8px 14px;
+		margin: 0 2px;
+		background: #EDEDED;
+		border: 1px solid #DADADA;
+		-webkit-border-radius: 3px 3px 0 0;
+		        border-radius: 3px 3px 0 0;
+		color: #999999;
+		display: inline;
+	}
+	.tabs ul li:hover {
+		color: #000000;
+	}
+	.tabs ul li.active {
+		background: #FFFFFF;
+		border: 1px solid #DADADA;
+		color: #000000;
+		border-bottom: 1px solid #FFFFFF;
+	}
+	```
+
+	For full implementation guide, please refer to [Bootstrap Tabs](http://getbootstrap.com/javascript/#tabs) for implementation guide.
 
 ##Type<a name="#type"></a>
 ####Header type
@@ -219,43 +260,161 @@ These are the colors for the default theme of the app. For better consistency, c
 1. ![](https://www.evernote.com/shard/s38/sh/0cd28b18-d542-4a9d-87ad-12139f585546/7b6f5428fae218785cc3bea0a1fb21ea/deep/0/type-label.png)
 
 	```css
-	label {font-size: 11px; color: #DADADA; line-height: 15px;}
+	label {font-size: 11px; color: #DADADA; line-height: 15px; text-transform: uppercase;}
 	```
 
 ##Form Elements<a name="#form-elements"></a>
 ####Input
-1. Input field (empty)
+1. Input label
+	
+	![](https://www.evernote.com/shard/s38/sh/0cd28b18-d542-4a9d-87ad-12139f585546/7b6f5428fae218785cc3bea0a1fb21ea/deep/0/type-label.png)
+	
+	Each field is usually preceded by a label. This is the default styling for all labels in a form.
+
+	CSS:
+
+	```css
+	form label {
+		font-size: 11px;
+		color: #DADADA;
+		line-height: 15px;
+		text-transform: uppercase;
+	}
+	```
+
+1. Input field (Normal & focused)
 
 	![](https://www.evernote.com/shard/s38/sh/b5bb25f4-53f9-443b-9048-a351656edcae/47976092a89aa36f4b2661e961aeb71f/deep/0/form-input-empty.png)
 
-1. Input field (disabled)
+	![](https://www.evernote.com/shard/s38/sh/40500d89-55ce-4365-9ea5-e6ea467012df/68a4bc2de5131ef79ee55e39bd82a5e8/deep/0/form-input-active-with-note.png)
+
+	HTML:
+
+	```html
+	<form>
+		<input type="text" placeholder="Input empty">
+	</form>
+	```
+
+	CSS:
+
+	```css
+	form input:not([type=submit]):not([type=file]) {
+		background: #F8F8F8;
+		width: 100%;
+		padding: 8px 14px;
+		margin-top: 4px;
+		margin-bottom: 10px;
+		border: 1px solid #DADADA;
+		box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.06);
+		border-radius: 2px;
+		font-size: 14px;
+		transition: box-shadow 0.3s, border 0.3s;
+	}
+
+	form input:not([type=submit]):not([type=file]):focus {
+		outline: none;
+		border: 1px solid #75B3FA;
+		box-shadow: 0px 0px 3px 0px #CCDFF6, inset 0px 1px 1px 0px rgba(0,0,0,0.06);
+	}
+	```
+
+1. Input field (Disabled)
 
 	![](https://www.evernote.com/shard/s38/sh/ada4102c-047c-4ce1-8fa7-65a14c2cf1ab/44a0f238f2f3841710aafac2f9dc358c/deep/0/form-input-disabled.png)
 
-1. Input field (active)
+	HTML:
 
-	![](https://www.evernote.com/shard/s38/sh/40500d89-55ce-4365-9ea5-e6ea467012df/68a4bc2de5131ef79ee55e39bd82a5e8/deep/0/form-input-active-with-note.png)
+	```html
+	<form>
+		<input type="text" placeholder="Input disabled" disabled>
+	</form>
+	```
 
-1. Input field (error)
+	CSS:
+
+	```css
+	form input:not([type=submit]):not([type=file]):disabled {
+		background: #F8F8F8;
+		border: 1px solid #ECECEC;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+	```
+
+1. Input field (Invalid)
 
 	![](https://www.evernote.com/shard/s38/sh/c14a6710-d68e-4ef7-9867-ccbc22d4de9b/8e4b22efb2e4def9b4bed9475eccb83f/deep/0/form-input-error-with-note.png)
 
-1. Input field with button
+	HTML:
+
+	```html
+	<form>
+		<input type="text" placeholder="Input invalid">
+	</form>
+	```
+
+	CSS:
+
+	```css
+	form input:not([type=submit]):not([type=file]):invalid {
+		background: #FFF9F9;
+		border: 1px solid #FB5E73;
+		box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.06);
+		color: #FF6666;
+	}
+	```
+
+<!-- 1. Input field with button
 
 	![](https://www.evernote.com/shard/s38/sh/1b32a940-164f-4bb1-b1a2-91048d6429eb/2808c91937524827a36d63eb5dbba702/deep/0/form-input-with-button.png)
 
 1. Input field with label
 
-	![](https://www.evernote.com/shard/s38/sh/b786250e-9fb0-4cf1-b8e8-b6af6ca416d0/abb43706f9716b7b67e32d26f67b9f27/deep/0/form-input-with-label.png)
+	![](https://www.evernote.com/shard/s38/sh/b786250e-9fb0-4cf1-b8e8-b6af6ca416d0/abb43706f9716b7b67e32d26f67b9f27/deep/0/form-input-with-label.png) -->
 
 ####Dropdown
 1. Dropdown normal
 
 	![](https://www.evernote.com/shard/s38/sh/41f48b2d-be53-49e4-9ccf-b61d89aecc5a/8b94585c96965b9aa3405d35b8bbea25/deep/0/form-dropdown-normal.png)
 
-1. Dropdown active
+	HTML:
 
-	![](https://www.evernote.com/shard/s38/sh/acf62bb4-e84a-46e7-9977-e0b279854034/7a3ca9e019efe0f2390a9e01c97b2a82/deep/0/form-dropdown-normal-active.png)
+	```html
+	<select name="Dropdown">
+		<option value="option1">Option 1</option>
+		<option value="option2">Option 2</option>
+		<option value="option3">Option 3</option>
+	</select>
+	```
+
+	CSS:
+
+	```css
+	select {
+		-webkit-appearance: button;
+		background-image: url('img/icon-arrow-down.png'), linear-gradient(-180deg, #FFFFFF 0%, #F8F8F8 100%);
+		background-position: 95% center;
+		background-repeat: no-repeat;
+		width: 300px;
+		padding: 8px 14px;
+		margin-bottom: 10px;
+		border: 1px solid #DADADA;
+		border-radius: 2px;	
+		color: #999999;
+		font-size: 14px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	select:hover {
+		cursor: pointer;
+	}
+	```
+
+<!--1. Dropdown active
+
+	![](https://www.evernote.com/shard/s38/sh/acf62bb4-e84a-46e7-9977-e0b279854034/7a3ca9e019efe0f2390a9e01c97b2a82/deep/0/form-dropdown-normal-active.png)-->
 
 
 ##Buttons and Switches<a name="#buttons-switches"></a>
