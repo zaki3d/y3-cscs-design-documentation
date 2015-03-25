@@ -579,7 +579,8 @@ Small buttons use the same styling classes as the regular buttons. The only diff
 HTML:
 
 ```html
-<button type="button" class="btn-small btn-primary"></button>
+<button type="button" class="btn-small
+ btn-primary"></button>
 ```
 
 CSS: 
