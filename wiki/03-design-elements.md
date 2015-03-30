@@ -18,6 +18,7 @@ These are the colors for the default theme of the app. For better consistency, c
 
 #####Primary
 1. ![](https://s3.amazonaws.com/f.cl.ly/items/33380H2L1L341q361s1I/col-pri-blue.png) `#4A90E2` - Royal Blue
+1. ![](https://s3.amazonaws.com/f.cl.ly/items/1W0u3q3D02180e250825/col-sec-blue-1.png) `#ECF8FE` - Alice Blue (Complimentary)
 1. ![](https://s3.amazonaws.com/f.cl.ly/items/1e0k320A1U1R0O0s3C1l/col-pri-smoke.png) `#F8F8F8` - White Smoke
 1. ![](https://s3.amazonaws.com/f.cl.ly/items/2a1x1K1e1y280a2u163z/col-pri-black.png) `#000000` - Solid Black
 1. ![](https://www.evernote.com/shard/s38/sh/5ba4ca93-99c8-419d-a05a-cfb21d16b1a5/23b7b06a7fd9c04bc80a179b3bed8cb3/deep/0/col-pri-white.png) `#FFFFFF` - White
