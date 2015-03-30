@@ -1,4 +1,4 @@
-These are some of the common elements used throughout the app. Please refer to this documentation when creating/using UI elements for the app.
+These are some of the common elements used throughout the app. Please refer to this documentation when creating/using UI elements for the app. There is also a `sandbox` directory in the repo, which holds a static html file containing some of the UI elements below. Feel free to take a look and fiddle.
 
 > *Disclaimer: Some of the html/css codes are extracted from Sketch and may be incomplete for implementation. They serve as a starting point for the front-end styling. Please update this documentation accordingly based on the final implementation.*
 
