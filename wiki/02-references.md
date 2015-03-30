@@ -2,7 +2,8 @@ For additional references on the design, refer to the links below:
 
 ####Design References
 1. [Wireframe (.jpg)](https://vltlabs.box.com/s/vxkf4qif3zd1hkj2s3a6)
-1. [Hi-fi UI design (InVision)](http://invis.io/5X24MCIGS) - **Exported views for main CSCS app**
+1. [Hi-fi **App** design (InVision)](http://invis.io/5X24MCIGS) - **Exported views for main CSCS app**
+1. [Hi-fi **Website** design (InVision)](https://projects.invisionapp.com/share/5X24MCIGS#/screens/70484470?maintainScrollPosition=false) - **Exported views for the CSCS website**
 1. [Themes preview (.jpg)](https://vltlabs.box.com/s/4wjaqt4gcoxd1g8k4erc9eq8qrjbfw7b)
 
 ####Source Files
@@ -10,7 +11,7 @@ For additional references on the design, refer to the links below:
 1. [CSCS source file (.sketch)](https://vltlabs.box.com/s/7cgnh6ijbitxf113lskn2n39jpqfdefs) - **Sketch file for main app layout**
 1. [Theme source files (.sketch)](https://vltlabs.box.com/s/pm4bl5uanzqofh33haz0pzb6nc3qwa6j) - Sketch files for themes
 1. [Marketing site source file (.sketch)](https://vltlabs.box.com/s/2m9yljxtfexhpqjptvhcbb0nm67nneco) - **Sketch file for marketing site**
-1. [Font file (.ttf)](https://vltlabs.box.com/s/ah4hc2tdgxc41js94z2k17hg8xkgnrtf)
+1. [Font file (.ttf)](https://vltlabs.box.com/s/ah4hc2tdgxc41js94z2k17hg8xkgnrtf) - Roboto font files
 1. [Master directory](https://vltlabs.box.com/s/twe8oezq8dq15qmdvav9v5xb10minjwe) - Master directory for all Y3-related files including older, obsolete designs.
 
 ####Softwares & Services
